@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap");
+
+$form-color: #254e58;
+
+* {
+    box-sizing: border-box;
+}
+/* Main body of page */
+body {
+    background-image: url("../background.jpg");
+    color: white;
+    font-family: "Muli", sans-serif;
+    display: grid;
+    grid-template-rows: auto auto auto 500px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: auto;
+    margin: 0;
+}
+// Logo/Name at top of page
+.logo {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    & i {
+        font-size: 80px;
+    }
+}
+// description under logo
+h4 {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+/* Container for login form */
+.loginContainer {
+    background-color: rgba(50, 50, 44, .6);
+    grid-row: 3;
+    padding: 20px 40px;
+    border-radius: 5px;
+    & h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    & a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #7ef3f1;
+    }
+    & option {
+        background-color: transparent;
+    }
+}
+/* Login button */
+.loginBtn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: #eafbff;
+    padding: 15px;
+    margin-top: 50px;
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    &:focus {
+        outline: 0;
+    }
+    // Login button animation
+    &:active {
+        transform: scale(0.98);
+    }
+}
+/* Email and Password fields */
+.form-control {
+    position: relative;
+    width: 300px;
+    & input {
+        margin: 20px 0 20px;
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        border-bottom: 2px white solid;
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        font-size: 18px;
+        color: white;
+    }
+    &:focus, &:valid {
+        outline: 0;
+    }
+    // Label for email and password
+    label {
+        position: absolute;
+        top: 15px;
+        left: 0;
+    }
+}
+// Forgot password
+#forgotPswd {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 0;
+}
+/* Email and password animations */
+.form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+    color: #eafbff;
+    transform: translateY(-30px);
+}
+/* Sign up text */
+.register {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

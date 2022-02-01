@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <!-- favicon icon for webpage -->
+    <link rel="icon" type="image/png" href="yen-regular-24.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <!-- boxicon icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Logo and title -->
+    <div class="logo">
+        <i class='bx bxl-sketch'></i>
+        <h1>[Product Name]</h1>
+    </div>
+    <!-- Description -->
+    <h4>placeholder for relevant introductory text</h4>
+    <!-- Login Form Container -->
+    <div class="loginContainer">
+        <!-- Language selector (custom dropdown menu) -->
+        <div class="select-wrapper">
+            <div class="select">
+                <!-- Selected option -->
+                <div class="select__trigger"><span>English</span>
+                    <div class="arrow"></div>
+                </div>
+                <!-- Options in dropdown menu -->
+                <div class="custom-options">
+                    <span class="custom-option selected" data-value="english">English</span>
+                    <span class="custom-option" data-value="spanish">Spanish</span>
+                    <span class="custom-option" data-value="german">German</span>
+                </div>
+            </div>
+        </div>
+        <h1>Log in to [Product Name]</h1>
+        <!-- Login Form -->
+        <form action="/action_page.php">
+            <!-- Email -->
+            <div class="form-control">
+                <input type="text" required>
+                <label>Email</label>
+            </div>
+            <!-- Password -->
+            <div class="form-control" id="password">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <!-- Remember me checkbox -->
+            <input type="checkbox" id="loginCheck">
+            <label for="LoginCheck">Keep me logged in</label>
+            <a id="forgotPswd" href="#">Forgot Password</a>
+            <!-- Login button -->
+            <input type="submit" value="Login" class="loginBtn"></input>
+            <!-- Register link -->
+            <p class="register">Don't have an account? <a href="#">Register</a></p>
+        </form>
+    </div>
+    <!-- Javascript -->
+    <script src="Javascript/login-form.js"></script>
+    <script src="Javascript/dropdown.js"></script>
+</body>

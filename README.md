@@ -1,6 +1,8 @@
 # Introduction
 This project is a login form that can be used in websites. The login form throws an error when hitting login since it is not attached to an actual page or website, but it contains the components and animations necessary to attach it to future websites.
 
+Project live at https://noclue011.github.io/login-form/
+
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
